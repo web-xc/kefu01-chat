@@ -18,13 +18,13 @@ enabled = true
 [[d1_databases]]
 binding = "DB"
 database_name = "kefu01_db"
-database_id = "fb1b57cc-5b47-4439-8ca6-3ca068abb346"
+database_id = "fe53a76e-16e9-4d4d-a2a3-f01f73ccdef4"
 migrations_dir = "migrations"
 
 # R2 对象存储：先执行 wrangler r2 bucket create cf-kefu-files
-[[r2_buckets]]
-binding = "BUCKET"
-bucket_name = "kefu01-files"
+# [[r2_buckets]]
+# binding = "BUCKET"
+# bucket_name = "kefu01-files"
 
 # 静态资源（public 目录）：Worker 优先接管请求，再回落到静态资源
 [assets]
